@@ -14,13 +14,11 @@
 </div>
 
 <div class="container">
+  <p>What's the longest word you can find?</p>
   <form action="/score" method="POST" data-turbo="false" class="input-group">
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
     <%= hidden_field_tag :grid, @grid %>
-    <div>
-      <label for="longestWord" class="form-control">What's the longest word you can find?</label>
-      <input type="text" name="attempt">
-      <input type="submit" value="Play">
-    </div>
+    <input type="text" name="attempt" class="form-control">
+    <input type="submit" value="Play" class="btn btn-outline-secondary btn-primary text-white">
   </form>
 </div>
